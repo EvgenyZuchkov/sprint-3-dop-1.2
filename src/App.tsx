@@ -28,11 +28,13 @@ export const App = () => {
 
   useEffect(() => {
     if (users.length > 0 && isAddNewUser) {
+      console.log('счетчик должен увеличиться')
       dispatch(plusUserCount());
     }
   }, [dispatch, users.length, isAddNewUser]);
 
   const handleClick = useCallback((): void => {
+    console.log('clicked')
     dispatch(createUser({id: v1(), name: generateRandomName()}));
 
     setIsAddNewUser(true);

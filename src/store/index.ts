@@ -2,7 +2,6 @@ import { AnyIfEmpty, FixTypeLater } from 'react-redux/es/types';
 import {combineReducers, compose, createStore, Store} from 'redux';
 import {usersCountReducer, usersReducer} from 'store/reducers';
 
-
 declare global {
   interface Window {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
